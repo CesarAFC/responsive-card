@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --green: rgb(79, 128, 106);
+    --white: rgb(254, 255, 255);
+    /* --fraunces: font-family: 'Fraunces', serif;
+    --mont: font-family: 'Montserrat', sans-serif; */
+}
+body {
+    background: rgb(241, 234, 228);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.product-card-container {
+    width: 90vw;
+    min-width: 320px;
+    margin: 30px auto;
+    border-radius: 5px;
+    background-color: var(--white);
+}
+.product-card-container > picture > img {
+    width: 100%;
+    min-width: 320px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.product-card-description {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 22px 22px 22px;
+}
+.product-card-description .preview {
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(169, 168, 168);
+    letter-spacing: 5px;
+}
+.product-card-description h1 {
+    margin-bottom: 10px;
+    line-height: 30px;
+    font-family: 'Fraunces', serif;
+}
+.product-card-description .product-info {
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color: rgb(169, 168, 168);
+}
+.product-price {
+    display: inline-flex;
+    margin-bottom: 15px;
+    align-items: center;
+}
+.product-price p:nth-child(1) {
+    margin-right: 15px;
+    font-family: 'Fraunces', serif;
+    font-size: 32px;
+    color: var(--green);
+}
+.product-discount {
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(169, 168, 168);
+    text-decoration:line-through;
+    font-size: 14px;
+}
+.addToCart {
+    width: 100%;
+    height: 45px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: var(--green);
+    color: var(--white);
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+}
+.addToCart:hover {
+    background-color: rgb(36, 63, 50);
+}
+.addToCart-icon {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 10px;
+    background-image: url('./images/icon-cart.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
